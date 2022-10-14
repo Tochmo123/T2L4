@@ -2,6 +2,6 @@ T2L4
 ----------------------
 1. ls -l | awk '{print $9":"$5}'
 2. ls -l | awk '{print $5,$9}' | sort -n
-3. 
-4.
-5.
+3. cat derby.txt | sed 's/ //g' | sed 's/,/ /g' | awk '{print $3,$4,$5}' | grep empate | sort -k3n | awk '{print $2,$3}' > empate.txt
+4. cat derby.txt | sed 's/ //g' | sed 's/,/ /g' | awk '{print $3,$4,$5}' | grep Levante | sort -k3n | awk '{print $2,$3}' > Levante.txt
+5. cat derby.txt | sed 's/ //g' | sed 's/,/ /g' | awk '{print $3,$4,$5}' | grep Valencia | sort -k3n | awk '{print $2,$3}' > Valencia.txt
